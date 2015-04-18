@@ -29,6 +29,33 @@
     </div>
 
     <div class="form-group">
+        <label for="languages" class="col-sm-2 control-label">
+            Languages known
+        </label>
+        <div class="col-sm-4">
+            {{#each knownLanguages}}
+                <label for="language-known-{{languageName}}" class="control-label">{{displayName}}</label>
+                <input type="checkbox" class="form-control" id="language-known-{{languageName}}" name="language-known[{{languageName}}]" {{checked}}/>
+
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="languages" class="col-sm-2 control-label">
+            Languages wanted
+        </label>
+        <div class="col-sm-4">
+            {{#each wantedLanguages}}
+                <label for="language-wanted[{{languageName}}]" class="control-label">{{displayName}}</label>
+                <input type="checkbox" class="form-control" id="language-wanted[{{languageName}}]" name="language-wanted[{{languageName}}]" {{checked}}/>
+
+            {{/each}}
+        </div>
+    </div>
+
+
+    <div class="form-group">
         <div class="col-sm-offset-2 col-sm-4">
             <button type="submit" class="btn btn-default">Save</button>
         </div>
