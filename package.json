@@ -1,0 +1,40 @@
+{
+  "name": "talkwithme",
+  "version": "0.0.1",
+  "description": "A service for matching speakers of the same language",
+  "main": "app.js",
+  "scripts": {
+    "start": "node bin/www",
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MatthaeusHarris/talkwithme.git"
+  },
+  "keywords": [
+    "Language"
+  ],
+  "author": "Matt Harri",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/MatthaeusHarris/talkwithme/issues"
+  },
+  "dependencies": {
+    "longjohn": "~0.2.4",
+    "debug": "~2.1.3",
+    "cookie-parser": "~1.3.4",
+    "passport": "~0.2.1",
+    "serve-favicon": "~2.2.0",
+    "passport-google-oauth2": "~0.1.6",
+    "morgan": "~1.5.2",
+    "csurf": "~1.8.0",
+    "express": "~4.12.3",
+    "body-parser": "~1.12.3",
+    "express-handlebars": "~2.0.0",
+    "socket.io": "~1.3.5",
+    "mongoose": "~4.0.1",
+    "express-session": "~1.11.1",
+    "gitlog": "~0.1.1",
+    "marked": "~0.3.3"
+  }
+}

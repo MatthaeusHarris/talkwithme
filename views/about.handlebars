@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12 text-left">
+        {{{readme}}}
+    </div>
+
+    <div class="col-md-12 text-left">
+        <h1>Revision History</h1>
+        <ul>
+            {{#each log}}
+                <li>
+                    <div class="revision">
+                        <span class="subject">{{subject}}</span>
+                        <span class="byline">
+                            <span class="date">{{authorDate}}</span>
+                            <span class="by">by</span>
+                            <span class="author">{{authorName}}</span>
+                        </span>
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
