@@ -60,6 +60,7 @@ auth.registerRoutes(app);
 
 app.use(require('./routes/index'));
 app.use(require('./routes/user'));
+app.use(require('./routes/talk'));
 
 
 app.use(function(req, res) {
@@ -72,5 +73,6 @@ app.use(function(err, req, res, next) {
     res.status(500);
     res.render('500');
 });
+
 
 module.exports = app;

@@ -1,3 +1,26 @@
 #main-container {
     /*padding-top: 70px;*/
 }
+
+#chat-history {
+    display: block;
+    width: 100%;
+}
+
+#chat-textarea {
+    width: 100%;
+}
+
+#chat-history .chat-line {
+    display: block;
+    clear: both;
+}
+
+#chat-history .chat-line .actor {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+#chat-history .chat-line .text {
+    color: #000000;
+}

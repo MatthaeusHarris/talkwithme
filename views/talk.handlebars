@@ -1,0 +1,17 @@
+<h1>Talk</h1>
+<p>This is a work in progress.  If you see it and it doesn't do anything, that's because I'm not done making it do things yet.</p>
+<div class="col-lg-6">
+    <div id="chat-history">
+
+    </div>
+    <textarea id="chat-textarea"></textarea>
+</div>
+
+{{#section 'jquery'}}
+    <script type="text/javascript">
+        var userID = '{{user._id}}';
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/js/talk.js"></script>
+
+{{/section}}
