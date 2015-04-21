@@ -17,7 +17,7 @@ $(function() {
     };
 
     writeLine('system', 'system', 'Connecting to server');
-    var socket = io.connect('http://localhost:3000', {'forceNew': true});
+    var socket = io.connect(location.protocol + "//" + location.hostname + ":" + (location.port || 80), {'forceNew': true});
     socket.on('connected', function (data) {
         console.log(data);
         writeLine('system', 'system', data.status);
