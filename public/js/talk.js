@@ -20,4 +20,19 @@ $(function() {
         writeLine('system', 'system', data.status);
         socket.emit('register', {userID: userID});
     });
+
+    socket.on('error', function(data) {
+        console.log(data);
+        writeLine('system', 'error', data.status);
+    });
+
+    socket.on('system', function(data) {
+        console.log(data);
+        writeLine('system', 'system', data.status);
+    });
+
+    socket.on('debug', function(data) {
+       console.log(data);
+        writeLine('debug', 'debug', '<pre>' + JSON.stringify(data, null, 2) + '</pre>')
+    });
 });
