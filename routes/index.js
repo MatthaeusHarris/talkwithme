@@ -11,13 +11,10 @@ var fs = require('fs');
 var mdText = fs.readFileSync('README.md').toString();
 
 router.get('/', function(req, res) {
-    console.log(mdText);
-    console.log(marked(mdText));
     res.render('about', {log: gitLog.log, readme: marked(mdText)});
 });
 
 router.get('/about', function(req, res) {
-    console.log(gitLog);
     res.render('about', {log: gitLog.log});
 });
 
